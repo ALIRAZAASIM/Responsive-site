@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+#nav {
+    width: 100%;
+    height: 70px;
+    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    border-bottom: 2px solid lightslategray;
+}
+
+#head {
+   display: flex;
+   gap: 4vw;
+}
+
+#head button {
+    padding: 0.5vw 0.5vw;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    color: white;
+}
+#head button:hover{
+    background-color: burlywood;
+    color:black;
+    transition: all ease-in 0.5s;
+}
+
+#head i {
+    font-size: 2vw;
+    align-items: center;
+    padding: 0 1vw;
+    display: none;
+}
+
+
+#content {
+    height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#left {
+    height: 100%;
+    width: 50%;
+    padding: 4vw 3vw;
+}
+
+#left h1 {
+    font-size: 4vw;
+    line-height: 1.2;
+}
+
+#left p {
+    font-size: 1.2vw;
+    padding-top: 2vw;
+}
+
+#content button {
+    padding: 0.5vw 0.5vw;
+    font-size: 2vw;
+    margin-top: 2vw;
+    border: none;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    color: white;
+}
+#content button:hover{
+    background-color: burlywood;
+    color:black;
+    transition: all ease-in 0.5s;
+}
+
+#right {
+    height: 100%;
+    width: 50%;
+}
+
+#right img {
+    height: 100%;
+    width: 100%;    
+}
+
+@media (max-width: 768px) {
+    #nav {
+        font-size: 3vw;
+        padding: 0 4vw;
+    }
+
+    #head h1 {
+        display: none;
+    }
+
+    #head button {
+        display: none; 
+    }
+
+    #head i {
+        display: block; 
+        font-size: 5vw;
+    }
+
+    #content {
+        flex-direction: column;
+        height: calc(100% - 70px);
+    }
+
+    #left, #right {
+        width: 100%;
+    }
+
+    #left h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #left p {
+        font-size: 2.5vw;
+        padding-top: 3vw;
+    }
+
+    #content button {
+        font-size: 2.5vw;
+        margin-top: 3vw;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    #nav {
+        height: 60px;
+        padding: 0 2vw;
+    }
+
+    #head i {
+        font-size: 4vw;
+    }
+
+    #left h1 {
+        font-size: 4vw;
+    }
+
+    #left p {
+        font-size: 2vw;
+    }
+
+    #content button {
+        font-size: 2.5vw;
+        padding: 0.4vw 0.8vw;
+    }
+
+    #right img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #left h1 {
+        font-size: 5vw;
+    }
+
+    #left p {
+        font-size: 2.5vw;
+    }
+
+    #content button {
+        font-size: 2.5vw;
+    }
+
+    #nav {
+        padding: 0 3vw;
+    }
+
+    #head i {
+        font-size: 5vw;
+    }
+}
